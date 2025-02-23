@@ -89,6 +89,10 @@ For customer segmentation we use Recency, Frequency, and Monetary (RFM) Analysis
  ![image](https://github.com/user-attachments/assets/21e17226-2caa-4015-a80a-457e32064ca5)
 
 
+ ![image](https://github.com/user-attachments/assets/0d6d9107-a632-4e00-9ef0-12e79c0e9e96)
+
+
+
 
 **Conclusion**
 
