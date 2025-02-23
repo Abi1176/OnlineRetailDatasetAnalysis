@@ -10,83 +10,75 @@ This dataset contains transaction records of a UK-based online retailer from 201
 
 **Columns:**
 
-**InvoiceNo:** Unique identifier for each transaction
+    **InvoiceNo:** Unique identifier for each transaction
+    
+    **StockCode:** Unique identifier for each product
+    
+    **Description:** Product name
+    
+    **Quantity:** Number of products purchased
+    
+    **InvoiceDate**: Date of purchase
+    
+    **UnitPrice**: Price per item
+    
+    **CustomerID:** Unique identifier for each customer
+    
+    **Country:** Country of the customer
 
-**StockCode:** Unique identifier for each product
+**Data Preprocessing & Cleaning**
 
-**Description:** Product name
-
-**Quantity:** Number of products purchased
-
-**InvoiceDate**: Date of purchase
-
-**UnitPrice**: Price per item
-
-**CustomerID:** Unique identifier for each customer
-
-**Country:** Country of the customer
-
-
-**Data Cleaning & Preprocessing**
-
- Before analysis, we clean the dataset:
-
-✔ Remove missing values: CustomerID is missing for some rows (~25%). We drop these rows.
-
-✔ Remove duplicates: Some transactions are duplicated.
-
-✔ Handle canceled transactions: Negative quantities indicate order cancellations. We remove them.
-
-✔ Create a ‘TotalPrice’ column: TotalPrice = Quantity × UnitPrice
-
+    🔹Removed missing values and duplicate records
+    
+    🔹Filtered out canceled transactions (negative quantities)
+    
+    🔹Created a TotalPrice column (Quantity × UnitPrice)
 
 **Exploratory Data Analysis (EDA)**
 
 **Key Insights from Data Exploration**:
 
-🔹 The dataset contains 4,373 unique customers.
-
-🔹 Top-selling products: Seasonal gifts and home décor dominate sales.
-
-🔹 Peak sales months: November and December show the highest transactions (holiday shopping effect).
-
-🔹 Geographical trends: The UK contributes 85% of total sales, while Germany and France are also key markets.
+    🔹The dataset contains 4,373 unique customers.
+    
+    🔹Top-selling products: Seasonal gifts and home décor dominate sales.
+    
+    🔹Peak sales months: November and December show the highest transactions (holiday shopping effect).
+    
+    🔹Geographical trends: The UK contributes 85% of total sales, while Germany and France are also key markets.
 
 **Sales Distribution by Country:**
 
 **Country	Percentage of Sales**
 
-United Kingdom	85%
-
-Germany	2.5%
-
-France	2.3%
-
-Others	10.2%
+    🔹United Kingdom	85%
+    
+    🔹Germany	2.5%
+    
+    🔹France	2.3%
+    
+    🔹Others	10.2%
 
 **Customer Segmentation Using RFM Analysis**
 
 For customer segmentation we use Recency, Frequency, and Monetary (RFM) Analysis to segment customers:
 
-**Recency (R)**: How recently a customer made a purchase
-
-**Frequency (F)**: How often a customer buys
-
-**Monetary (M)**: How much a customer spends
-
+  **🔹Recency (R)**: How recently a customer made a purchase
+  
+  **🔹Frequency (F)**: How often a customer buys
+  
+  **🔹Monetary (M)**: How much a customer spends
 
 **K-Means Clustering:**
-
-Using this algorithm customers were categorized into:
-
-**High-Value Buyers** – Frequent, high-spending customers
-
-**Occasional Buyers** – Moderate spending & purchase frequency
-
-**One-Time Shoppers** – Rare purchases, low spending
-
-**Lost Customers**– Haven’t purchased recently
-
+  
+  Using this algorithm customers were categorized into:
+  
+ **🔹High-Value Buyers** – Frequent, high-spending customers
+ 
+ **🔹Occasional Buyers** – Moderate spending & purchase frequency
+ 
+ **🔹One-Time Shoppers** – Rare purchases, low spending
+ 
+ **🔹Lost Customers**– Haven’t purchased recently
 
 **Conclusion**
 
