@@ -1,6 +1,6 @@
 **Dataset Overview**
 
-This dataset contains transaction records of a UK-based online retailer from 2010 to 2011.
+This dataset contains transaction records of a UK-based online retailer from 2010 to 2011.This analyzes the Online Retail Dataset from the UCI Machine Learning Repository to uncover customer purchasing patterns, best-selling products, and segmentation insights using unsupervised learning techniques. 
 
 🔗 **Dataset Source:** [UCI Machine Learning Repository - Online Retail Dataset](https://archive.ics.uci.edu/dataset/352/online+retail)
 
