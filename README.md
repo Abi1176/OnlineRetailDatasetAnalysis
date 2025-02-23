@@ -79,6 +79,16 @@ For customer segmentation we use Recency, Frequency, and Monetary (RFM) Analysis
  **🔹One-Time Shoppers** – Rare purchases, low spending
  
  **🔹Lost Customers**– Haven’t purchased recently
+ 
+
+**Visualizations**
+
+ ![image](https://github.com/user-attachments/assets/dde2f8a0-ec7c-4133-ac1f-ddc2a86e32b0)
+
+
+ ![image](https://github.com/user-attachments/assets/21e17226-2caa-4015-a80a-457e32064ca5)
+
+
 
 **Conclusion**
 
